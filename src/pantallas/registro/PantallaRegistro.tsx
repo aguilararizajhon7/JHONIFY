@@ -56,10 +56,11 @@ export function PantallaRegistro() {
         <form onSubmit={onSubmit} className="flex flex-col gap-3">
           <label className="text-sm font-medium">Nombre</label>
           <Input required placeholder="Tu nombre" value={name} onChange={(e) => setName(e.target.value)} />
-          <label className="text-sm font-medium">Correo o número</label>
+          <label className="text-sm font-medium">Correo electrónico</label>
           <Input
             required
-            placeholder="tucorreo@ejemplo.com o +5215512345678"
+            type="email"
+            placeholder="tucorreo@ejemplo.com"
             value={identifier}
             onChange={(e) => setIdentifier(e.target.value)}
           />

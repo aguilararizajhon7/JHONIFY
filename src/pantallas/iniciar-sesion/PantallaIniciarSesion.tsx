@@ -48,11 +48,12 @@ export function PantallaIniciarSesion() {
           <p className="text-sm text-muted-foreground">Inicia sesión para escuchar música</p>
         </div>
         <form onSubmit={onSubmit} className="flex flex-col gap-3">
-          <label className="text-sm font-medium">Correo o número</label>
+          <label className="text-sm font-medium">Correo electrónico</label>
           <Input
             required
+            type="email"
             autoComplete="username"
-            placeholder="tucorreo@ejemplo.com  o  +5215512345678"
+            placeholder="tucorreo@ejemplo.com"
             value={identifier}
             onChange={(e) => setIdentifier(e.target.value)}
           />
